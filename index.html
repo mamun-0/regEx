@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>RegEx</title>
   </head>
-  <body></body>
+  <body>
+    <div data-selection-container class="container">
+      <select
+        id="dropdown"
+        class="form-select my-3"
+        aria-label="Default select example">
+        <option selected value="email">Email</option>
+        <option value="phone">Phone Number</option>
+        <option value="post">Post Code</option>
+      </select>
+      <form>
+        <label class="lead" for="input">Check your input</label>
+        <input
+          class="form-control"
+          data-input
+          type="text"
+          id="input"
+          placeholder="type in here" />
+        <button data-submit class="btn btn-info mt-3" data-submit>Check</button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
